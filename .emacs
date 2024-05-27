@@ -10,7 +10,7 @@
  '(package-archives
    '(("gnu" . "https://elpa.gnu.org/packages/")
      ("melpa" . "https://stable.melpa.org/packages/")))
- '(package-selected-packages '(typescript-mode use-package flycheck web-mode)))
+ '(package-selected-packages '(typescript-mode use-package web-mode)))
 
 (global-linum-mode 1)
 
@@ -44,10 +44,6 @@
 
 (require 'use-package)
 (setq use-package-always-ensure t)
-
-(use-package flycheck
-  :ensure t
-  :init (global-flycheck-mode t))
 
 (use-package web-mode
   :ensure t
